@@ -1,0 +1,27 @@
+<div *ngIf="purchases">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User ID</th>
+          <th>Course ID</th>
+          <th>Seller ID</th>
+          <th>Payment ID</th>
+          <th>Date Enrolled</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let purchase of purchases">
+          <td>{{ purchase.id }}</td>
+          <td>{{ purchase.idUser }}</td>
+          <td>{{ purchase.idCourse }}</td>
+          <td>{{ purchase.sellerId }}</td>
+          <td>{{ purchase.paymentId }}</td>
+          <td>{{ purchase.dateEnrolled }}</td>
+          <td>{{ purchase.price | currency }}</td> <!-- Assuming price is a number -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

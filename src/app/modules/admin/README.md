@@ -1,1 +1,0 @@
-## l Template Component l gdim mta3 roua tanhotah f component MainLayoutComponent eli hiya component teht l module admin route mta3ha /admin/main

@@ -1,0 +1,15 @@
+<form id="account-form">
+    <input type="text" id="first-name" placeholder="First Name">
+    <input type="text" id="last-name" placeholder="Last Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="phone" placeholder="Phone Number">
+    <input type="text" id="ssn-last-4" placeholder="SSN Last 4 Digits">
+    <input type="text" id="dob-day" placeholder="Day of Birth">
+    <input type="text" id="dob-month" placeholder="Month of Birth">
+    <input type="text" id="dob-year" placeholder="Year of Birth">
+    <button type="button" (click)="createToken()">Create Token</button>
+
+    <a href="https://connect.stripe.com/express/oauth/authorize?response_type=code&client_id=ca_PoHO43sZiW3kssJoY7siQq3zWvhGNl9i&scope=read_write&redirect_uri=http://localhost:4200/callback">Connect with Stripe</a>
+
+  </form>
+  

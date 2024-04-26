@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SuccededComponent } from './succeded/succeded.component';
+import { PaymentIntComponent } from './payment-int/payment-int.component';
+import { AccountSellerComponent } from './account-seller/account-seller.component';
+import { CardPurchaseComponent } from './card-purchase/card-purchase.component';
 
 const routes: Routes = [
-  {path : 'admin' , loadChildren: () => import("./modules/admin/admin.module").then(m => m.AdminModule)},
-  {path : 'front' , loadChildren: () => import("./modules/front-office/front-office.module").then(m => m.FrontOfficeModule)},
+
+{path:'succeeded', component:SuccededComponent},
+{path:'purchase',component:PaymentIntComponent},
+{path:'accountTotal',component:AccountSellerComponent},
+{path:'adminPurchase',component:CardPurchaseComponent}
 
 ];
 
