@@ -1,0 +1,74 @@
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  .pricing-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .plan-title {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .price span {
+    font-weight: bold;
+  }
+  
+  .duration {
+    color: #666;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  
+  .features {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .features li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+  
+  .subscribe-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,17 @@
+<div class="payment-container">
+    <div class="payment-form">
+      <div #cardElement></div>
+      <div class="subscription-container">
+  
+        <!-- Subscription options, these should be dynamically generated based on available plans -->
+        <div *ngFor="let plan of plan">
+          <div class="plan">
+            <button (click)="subscribeToPlan(plan.customerId, plan.priceId)">Subscribe</button>
+          </div>
+        </div>
+      </div>    </div>
+  </div>
+
+
+ 
+

@@ -1,0 +1,77 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+  
+  /* Styles for the div containing the buttons */
+div {
+  text-align: center; /* Center aligns the buttons within the div */
+  padding: 20px; /* Adds some padding around the div for spacing */
+}
+
+/* Basic styling for all buttons */
+button {
+  background-color: #007BFF; /* A nice shade of blue */
+  border: none; /* Removes the default border */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+  text-align: center; /* Center text alignment */
+  text-decoration: none; /* Removes any text decoration */
+  display: inline-block; /* Allows the setting of width and height */
+  font-size: 16px; /* Sets a readable font size */
+  margin: 4px 2px; /* Adds margin between buttons */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  border-radius: 5px; /* Rounds the corners of the buttons */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #0056b3; /* A darker shade of blue for hover state */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Adds a shadow effect on hover */
+}
+
+/* Focus effect to enhance accessibility */
+button:focus {
+  outline: none; /* Removes the outline to clean up the focus state */
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5); /* Adds a blue glow around the button */
+}
